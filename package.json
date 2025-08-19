@@ -1,0 +1,64 @@
+{
+  "name": "video-moderation",
+  "version": "1.0.0",
+  "description": "A comprehensive video moderation API that extracts frames and analyzes content using TensorFlow.js and NLP for inappropriate content detection",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "setup": "node download-models.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "video-moderation",
+    "content-moderation",
+    "tensorflowjs",
+    "nlp",
+    "ai",
+    "machine-learning",
+    "image-analysis",
+    "video-processing",
+    "ffmpeg",
+    "content-safety"
+  ],
+  "author": "Ayan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ayan-cyber134/video-moderation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ayan-cyber134/video-moderation/issues"
+  },
+  "homepage": "https://github.com/Ayan-cyber134/video-moderation#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "ffmpeg-static": "^5.1.0",
+    "@tensorflow/tfjs-node": "^4.10.0",
+    "@tensorflow-models/coco-ssd": "^2.2.3",
+    "@tensorflow-models/blazeface": "^1.0.1",
+    "natural": "^6.3.0",
+    "jimp": "^0.22.10",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ]
+}
